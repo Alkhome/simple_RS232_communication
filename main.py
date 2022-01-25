@@ -113,7 +113,6 @@ class App:
             x = str(format(ord(char), 'b').zfill(8))  # makes sure every char is in 8bits format
             arr.append(START_BIT + x[::-1] + STOP_BITS)
         self.b_label.config(text=arr)
-        return arr
 
     def to_text_conversion(self):
 
